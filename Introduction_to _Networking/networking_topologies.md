@@ -3,7 +3,7 @@
 - A netwrok topology is a typical arrangement and phyical or logical connection of devices in a network. 
 - Computers are hosts, such as clients and servers.
 - They include network component (switches, bridges and router), which have distribution function and ensure that all network hosts can establish logical connection with each other.
-- Network topology determines the component to be used and the access methods to the transmission media.
+- Network topology determines the component to be used, and the access methods to the transmission media.
 - **Transmission medium layout** (used to connect devices) is the physical topology of the network, this refers to the cabling plan, the position of the nodes and the connection between the nodes and the cabling. **Logical topology** is how the signals act on the network media or how the data will be transmitted across the network from one device to the devices' physical connection.
 
 **We can devide the entire network topology area into three areas:**

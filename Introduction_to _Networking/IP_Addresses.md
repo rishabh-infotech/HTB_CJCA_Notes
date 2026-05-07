@@ -89,7 +89,7 @@
     192        168         1        10
   11000000   10101000  00000001  00001010
 
-- Subnet mask of /17 :
+- Subnet mask of /17 : first 17 bits is 1 else all 0
   ```text
    11111111  11111111  10000000  0000000
       255      255        127       0
@@ -104,7 +104,6 @@
 
 - Get Broadcast Address :
   - Easiest way of getting broadcast address is calculate total number of host then fill in network address.
-  //```text
   - Toatal Network bit : 17 (get from cidr)
   - Remaining Host bit : 2<sup>32-17</sup> = $2^{15}$
   - Network address : 192.168.0.0

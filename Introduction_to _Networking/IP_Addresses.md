@@ -36,13 +36,13 @@
   - By using subnet mask we can get host and network part of an IP.
   - Further logical speration of a network is done with the help of **Subnetting**.
     
-| Class | Netwrok addresses | First Address | Last Addresses | ${\color{#F70F0E}Subnetmask}$ | CIDR | Subnets | IPs |
+| Class | Netwrok addresses | First Address | Last Addresses | ${\color{#7EE787}Subnetmask}$ | CIDR | Subnets | IPs |
 |-------|-------------------|---------------|----------------|------------|------|---------|-----|
-|A|1.0.0.0|1.0.0.1|127.255.255.255|$${\color{blue}255.0.0.0}$$|/8|127|16777214+2|
-|B|128.0.0.0|128.0.0.1|191.255.255.255|${\color{blue}255.255.0.0}$|/16|16384|65534+2|
-|C|192.0.0.0|192.0.0.1|223.255.255.255|${\color{blue}255.255.255.0}$|/24|2097152|254+2|
-|D|224.0.0.0|224.0.0.1|239.255.255.255|$${\color{blue}Multicast}$$|Multicast|Multicast|Multicast|
-|E|240.0.0.0|240.0.0.1|255.255.255.255|${\color{blue}Reserved}$|Reserved|Multicast|Multicast|
+|A|1.0.0.0|1.0.0.1|127.255.255.255|$${\color{#9CCBF2}255.0.0.0}$$|/8|127|16777214+2|
+|B|128.0.0.0|128.0.0.1|191.255.255.255|${\color{#9CCBF2}255.255.0.0}$|/16|16384|65534+2|
+|C|192.0.0.0|192.0.0.1|223.255.255.255|${\color{#9CCBF2}255.255.255.0}$|/24|2097152|254+2|
+|D|224.0.0.0|224.0.0.1|239.255.255.255|$${\color{#9CCBF2}Multicast}$$|Multicast|Multicast|Multicast|
+|E|240.0.0.0|240.0.0.1|255.255.255.255|${\color{#9CCBF2}Reserved}$|Reserved|Multicast|Multicast|
 
 ## Network and Gateway Addresses :
 
@@ -52,13 +52,13 @@
 - Gateway address is used communicate with internet. Gateway address is router IP assigned from available IPs pool of network.
 - packets are received and transmit to and from this gateway address.
 
-| Class | ${\color{#F70F0E}Network \space addresses}$ | ${\color{#F70F0E}Gateway \space Address (anyone \space from \space this \space range)}$ | Subnetmask | CIDR | Subnets | IPs |
+| Class | ${\color{#7EE787}Network \space addresses}$ | ${\color{#7EE787}Gateway \space Address (anyone \space from \space this \space range)}$ | Subnetmask | CIDR | Subnets | IPs |
 |-------|-------------------|-------------------------------|------------|------|---------|-----|
-|A|${\color{blue}1.0.0.0}$|${\color{blue}1.0.0.1 - 127.255.255.254}$|255.0.0.0|/8|127|16777214+2|
-|B|${\color{blue}128.0.0.0}$|${\color{blue}128.0.0.1 - 191.255.255.254}$|255.255.0.0|/16|16384|65534+2|
-|C|${\color{blue}192.0.0.0}$|${\color{blue}192.0.0.1 - 223.255.255.254}$|255.255.255.0|/24|2097152|254+2|
-|D|${\color{blue}224.0.0.0}$|${\color{blue}224.0.0.1 - 239.255.255.254}$|Multicast|Multicast|Multicast|Multicast|
-|E|${\color{blue}240.0.0.0}$|${\color{blue}240.0.0.1 - 255.255.255.254}$|Reserved|Reserved|Multicast|Multicast|
+|A|${\color{#9CCBF2}1.0.0.0}$|${\color{#9CCBF2}1.0.0.1 - 127.255.255.254}$|255.0.0.0|/8|127|16777214+2|
+|B|${\color{#9CCBF2}128.0.0.0}$|${\color{#9CCBF2}128.0.0.1 - 191.255.255.254}$|255.255.0.0|/16|16384|65534+2|
+|C|${\color{#9CCBF2}192.0.0.0}$|${\color{#9CCBF2}192.0.0.1 - 223.255.255.254}$|255.255.255.0|/24|2097152|254+2|
+|D|${\color{#9CCBF2}224.0.0.0}$|${\color{#9CCBF2}224.0.0.1 - 239.255.255.254}$|Multicast|Multicast|Multicast|Multicast|
+|E|${\color{#9CCBF2}240.0.0.0}$|${\color{#9CCBF2}240.0.0.1 - 255.255.255.254}$|Reserved|Reserved|Multicast|Multicast|
 
 # Broadcast Address :
 
@@ -66,13 +66,13 @@
 - Broadcast in a network is a message that is transmitted to all participants of a network and does not rewuire any acknowledge(response).
 - last IP address of a network is broadcast IP address, and by using this host can broadcast message to all participant in network.
 
-| Class | Netwrok addresses | First Address | ${\color{#F70F0E}Last \space (Broadcast \space Address)}$ | Subnetmask | CIDR | Subnets | IPs |
+| Class | Netwrok addresses | First Address | ${\color{#7EE787}Last \space (Broadcast \space Address)}$ | Subnetmask | CIDR | Subnets | IPs |
 |-------|-------------------|---------------|----------------|------------|------|---------|-----|
-|A|1.0.0.0|1.0.0.1|${\color{blue}127.255.255.255}$|255.0.0.0|/8|127|16777214+2|
-|B|128.0.0.0|128.0.0.1|${\color{blue}191.255.255.255}$|255.255.0.0|/16|16384|65534+2|
-|C|192.0.0.0|192.0.0.1|${\color{blue}223.255.255.255}$|255.255.255.0|/24|2097152|254+2|
-|D|224.0.0.0|224.0.0.1|${\color{blue}239.255.255.255}$|Multicast|Multicast|Multicast|Multicast|
-|E|240.0.0.0|240.0.0.1|${\color{blue}255.255.255.255}$|Reserved|Reserved|Multicast|Multicast|
+|A|1.0.0.0|1.0.0.1|${\color{#9CCBF2}127.255.255.255}$|255.0.0.0|/8|127|16777214+2|
+|B|128.0.0.0|128.0.0.1|${\color{#9CCBF2}191.255.255.255}$|255.255.0.0|/16|16384|65534+2|
+|C|192.0.0.0|192.0.0.1|${\color{#9CCBF2}223.255.255.255}$|255.255.255.0|/24|2097152|254+2|
+|D|224.0.0.0|224.0.0.1|${\color{#9CCBF2}239.255.255.255}$|Multicast|Multicast|Multicast|Multicast|
+|E|240.0.0.0|240.0.0.1|${\color{#9CCBF2}255.255.255.255}$|Reserved|Reserved|Multicast|Multicast|
 
 ## CIDR :
 
@@ -92,7 +92,7 @@
 - Subnet mask of /17 :
   ```text
    11111111  11111111  10000000  0000000
-      255      255        128       0
+      255      255        127       0
 
 - Get Netwrok Address : Performing **AND operation** in between IP and CIDR
   ```text
@@ -102,10 +102,21 @@
    11000000  10101000  00000000  00000000
      192        168       0          0
 
+- Get Broadcast Address :
+  - Easiest way of getting broadcast address is calculate total number of host then fill in network address.
+  //```text
+  - Toatal Network bit : 17 (get from cidr)
+  - Remaining Host bit : 2<sup>32-17</sup> = $2^{15}$
+  - Network address : 192.168.0.0
+  - $2^{8}$ = 256 host can fit in fourth octet (0 - 255) - 192.168.0.0 to 192.168.0.255
+  - Remaining $2^{7}$ = 128 host fits in third octate (0 - 127) - 192.168.0.255 to 192.168.127.255
+  - last address(Broadcast Address) is : 191.168.127.255
+
 - All Addresses Finding :
  ```yaml
+   IP Address : 192.168.1.10
+   Subnet Mask : 255.255.127.0
    Netwrok Address : 192.168.0.0
    First Address : 192.168.0.1
    Last Address : 192.168.127.255
    Broadcast Address : 192.168.127.255
-  

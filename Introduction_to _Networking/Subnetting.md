@@ -32,7 +32,7 @@
   Default Network : 192.168.0.0
   Default Broadcast : 192.168.0.255
 
-  1st Subnetwork address: 192.168.0.1
+  1st Subnetwork address: 192.168.0.0
   Broadcast Address : 192.168.0.127
 
   2nd Subnetwork : 192.168.0.128
